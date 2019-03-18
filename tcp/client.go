@@ -11,13 +11,13 @@ import(
 func main(){
 
 	//SERVER 01
-	connection_01, error_01 := net.Dial("tcp", ":1313")
+	connection_01, error_01 := net.Dial("tcp", ":1001")
 	if error_01 != nil {
 		fmt.Println("Erro ao se conectar no servidor_01 !")
 	}
 	
 	//SERVER 02
-	connection_02, error_02 := net.Dial("tcp",":8080")
+	connection_02, error_02 := net.Dial("tcp",":1313")
 	if error_02 != nil{
 		fmt.Println("Erro ao se conectar no servidor_02 !")
 	}
