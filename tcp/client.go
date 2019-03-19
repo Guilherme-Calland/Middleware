@@ -11,7 +11,7 @@ import(
 func main(){
 
 	//SERVER 01
-	connection_01, error_01 := net.Dial("tcp", ":1001")
+	connection_01, error_01 := net.Dial("tcp", ":8080")
 	if error_01 != nil {
 		fmt.Println("Erro ao se conectar no servidor_01 !")
 	}
