@@ -9,7 +9,7 @@ import(
 func main(){
 	fmt.Println("inicando servidor...")
 
-	ln, _ := net.Listen("tcp", ":1001")
+	ln, _ := net.Listen("tcp", ":8080")
 	conn, _ := ln.Accept()
 
 	for{
